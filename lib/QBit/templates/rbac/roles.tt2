@@ -1,3 +1,4 @@
+[% WRAPPER page %]
 <table class="table table-striped">
   <thead>
     <tr>
@@ -14,3 +15,4 @@
   </tr>
   [% END %]
 </table>
+[% END %]

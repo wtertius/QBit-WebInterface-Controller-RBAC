@@ -1,3 +1,4 @@
+[% WRAPPER page %]
 [% form.start_form_html %]
   [% FOREACH group = right_groups.keys %]
   <h3>[% right_groups.${group}.name | html %]</h3>
@@ -31,3 +32,4 @@
 [% form.end_form_html %]
 
 [%# dumper(form) %]
+[% END %]
