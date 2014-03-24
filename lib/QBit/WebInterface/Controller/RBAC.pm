@@ -63,10 +63,10 @@ sub role_add : FORMCMD {
 sub role_rights : FORMCMD {
     my ($self) = @_;
 
-    my $registred_rights       = $self->app->get_registred_rights();
-    my $registred_right_groups = $self->app->get_registred_right_groups();
-    my $roles                  = $self->rbac->get_roles();
-    my $role_rights            = $self->rbac->get_roles_rights();
+    my $registered_rights       = $self->app->get_registered_rights();
+    my $registered_right_groups = $self->app->get_registered_right_groups();
+    my $roles                   = $self->rbac->get_roles();
+    my $role_rights             = $self->rbac->get_roles_rights();
 
     my %role_rights;
     foreach my $rec (@$role_rights) {
@@ -74,17 +74,17 @@ sub role_rights : FORMCMD {
     }
 
     my %right_groups;
-    foreach my $right (keys(%$registred_rights)) {
-        my $r = {%{$registred_rights->{$right}}, id => $right};
+    foreach my $right (keys(%$registered_rights)) {
+        my $r = {%{$registered_rights->{$right}}, id => $right};
         $right_groups{$r->{'group'}} ||= {
-            name   => $registred_right_groups->{$r->{'group'}},
+            name   => $registered_right_groups->{$r->{'group'}},
             rights => []
         };
         push(@{$right_groups{$r->{'group'}}{'rights'}}, $r);
     }
 
     my @role_rights_fields;
-    foreach my $right (keys(%$registred_rights)) {
+    foreach my $right (keys(%$registered_rights)) {
         foreach my $role (@$roles) {
             push(
                 @role_rights_fields,
