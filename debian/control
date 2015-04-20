@@ -1,12 +1,14 @@
-Source: libqbit-webinterface-controller-rbac-perl
+Source: libtertiusqbit-webinterface-controller-rbac-perl
 Section: perl
 Priority: extra
-Maintainer: Sergei Svistunov <sergei-svistunov@yandex.ru>
-Build-Depends: debhelper (>= 8.0.0), perl, libqbit-perl, libqbit-application-perl, libqbit-webinterface-perl (>=0.010)
+Maintainer: Dmitry Lukiyanchuk <wtertius@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), perl, libtertiusqbit-perl, libtertiusqbit-application-perl, libtertiusqbit-webinterface-perl (>=0.010)
 Standards-Version: 3.9.4
 
-Package: libqbit-webinterface-controller-rbac-perl
+Package: libtertiusqbit-webinterface-controller-rbac-perl
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}, perl, libqbit-perl, libqbit-application-perl, libqbit-webinterface-perl (>=0.010)
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}, perl, libtertiusqbit-perl, libtertiusqbit-application-perl, libtertiusqbit-webinterface-perl (>=0.010)
+Conflicts: libqbit-webinterface-controller-rbac-perl
+Replaces: libqbit-webinterface-controller-rbac-perl
 Description: RBAC manager for QBit application.
  RBAC manager for QBit application.

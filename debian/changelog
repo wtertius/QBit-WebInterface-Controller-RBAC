@@ -1,16 +1,16 @@
-libqbit-webinterface-controller-rbac-perl (0.003) raring; urgency=low
+libtertiusqbit-webinterface-controller-rbac-perl (0.003) raring; urgency=low
 
   * Fix registred misprint.
 
  -- Sergei Svistunov <sergei-svistunov@yandex.ru>  Tue, 25 Mar 2014 14:01:52 +0400
 
-libqbit-webinterface-controller-rbac-perl (0.002) raring; urgency=low
+libtertiusqbit-webinterface-controller-rbac-perl (0.002) raring; urgency=low
 
-  * Fixed for QBit::WebInterface 0.010
+  * Fixed for TertiusQBit::WebInterface 0.010
 
  -- Sergei Svistunov <sergei-svistunov@yandex.ru>  Thu, 16 Jan 2014 19:42:17 +0400
 
-libqbit-webinterface-controller-rbac-perl (0.001) raring; urgency=low
+libtertiusqbit-webinterface-controller-rbac-perl (0.001) raring; urgency=low
 
   * Initial commit
 
